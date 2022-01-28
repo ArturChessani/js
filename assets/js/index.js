@@ -44,60 +44,33 @@
 
 // Calculator
 
-const num1 = prompt();
-const operator = prompt();
-const num2 = prompt();
+// const num1 = prompt();
+// const operator = prompt();
+// const num2 = prompt();
 
-function calculator (a, op, b) {
-  if(isNaN(a) || isNaN(b)) {
-    return null;
-  }
+// function calculator (a, op, b) {
+//   if(isNaN(a) || isNaN(b)) {
+//     return null;
+//   }
 
-  if (op !== '+' || op !== '-') {
-    return null;
-  }
+//   if (op !== '+' || op !== '-') {
+//     return null;
+//   }
 
-  if (op === '+') {
-    return a + b;
-  }
+//   if (op === '+') {
+//     return a + b;
+//   }
 
-  if (op === '-') {
-    return a - b;
-  }
+//   if (op === '-') {
+//     return a - b;
+//   }
 
-  return null;
-}
+//   return null;
+// }
 
-calculator(num1, operator, num2)
+// calculator(num1, operator, num2)
 
-
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// } 
 
 
 
@@ -107,27 +80,49 @@ calculator(num1, operator, num2)
 // minNum(3, 7) // 7
 // minNum(5, 1) // 5
 
-// function name (num1, num2) {
+function min(num1, num2) {
 
-//   let num1 = 3;
-//   let num2 = 7;
-  
+  let bool = num1 <= num2;
+  if (bool) {
+    return num1;
+  }
+  // else {
+  //   return num2;
+  // }
 
-//   let bool = num1 num2
+
+  // if (bool === true) {
+  //   return num1;
+  // } else {
+  //   return num2;
+  // }
+  // }
+
+  // function minV2(num1, num2) {
+  //   const result = Math.min(num1, num2);
+  //   return result;
+  // }
+
+  // const res = minV2 (6, 4)
+
+  // console.log(res)
 
 
-//   if (bool) {
 
-//     return num1
-//   }
+  bool = num1 >= num2;
 
-//   bool = 
+  if (bool) {
+    return num2;
+  }
 
-//   if (bool) {
-//     return num1
-//   }
+  return null;
+}
 
-// }
+let result = min(6, 4);
+
+console.log(result)
+
+
 
 
 
